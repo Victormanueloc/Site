@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.93); /* Ajuste o último valor (0.5) para alterar a intensidade da sobreposição */
+    z-index: 2;
+}
+
+.content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+}
+
+.foto-retrato {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    /*position: absolute;
+    top: 50px;
+    left: 100px;*/
+}
+
+.bloco {
+    position: relative;
+    width: 300px; /* Largura do bloco */
+    height: 300px; /* Altura do bloco */
+    z-index: 3;
+    margin-top: 100px; /* Margem externa para espaçamento entre os blocos */
+    padding: 20px; /* Espaçamento interno dentro do bloco */
+    border: 0px solid #ccc; /* Bordas para destacar os blocos */
+    display: inline-block; /*Para que os blocos fiquem lado a lado */
+    box-sizing: border-box; /* Inclui as bordas e o padding na largura e altura total do bloco */
+    color: #fff;
+}
+
+.bloco1 {
+    /*position: relative;*/
+    width: 500px; /* Largura do bloco */
+    height: 300px; /* Altura do bloco */
+    z-index: 3;
+    margin-top: 100px; /* Margem externa para espaçamento entre os blocos */
+    padding: 20px; /* Espaçamento interno dentro do bloco */
+    border: 0px solid #ccc; /* Bordas para destacar os blocos */
+    display: flex; /*Para que os blocos fiquem lado a lado */
+    box-sizing: border-box; /* Inclui as bordas e o padding na largura e altura total do bloco */
+    color: #fff;
+    font-size: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.center {
+     text-align: center;
+}
+
+.left {
+     text-align: left;
+}
+
+.juftify {
+     text-align: justify;
+}
+
+.nome {
+    color: #fff;
+    font-size: 30px;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.letra-tabela {
+    color: #fff;
+    font-size: 18px;
+}
+
+tr.spacing-table>td {
+    padding-top: 10px;
+}
+
+
+.bloco1 .icons {
+    width: 500px; /* Largura do bloco */
+    height: 300px; /* Altura do bloco */
+    z-index: 3;
+    /*margin-top: 100px;  Margem externa para espaçamento entre os blocos */
+    padding: 20px; /* Espaçamento interno dentro do bloco */
+    border: 0px solid #ccc; /* Bordas para destacar os blocos */
+    display: flex; /*Para que os blocos fiquem lado a lado */
+    box-sizing: border-box; /* Inclui as bordas e o padding na largura e altura total do bloco */
+    color: #fff;
+    font-size: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-container {
+  width: 100px; /* Definir a largura das imagens conforme necessário */
+  height: auto; /* Manter a proporção original da imagem */
+  margin-right: 10px; /* Adicionar margem direita entre as imagens */
+  border-radius: 0;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.botao-teste{
+    position: relative;
+    /* width: 200px; Largura do bloco */
+    /*height: 200px;  Altura do bloco */
+    z-index: 3;
+    margin-top: 50px; /* Margem externa para espaçamento entre os blocos */
+    padding: 0px 0px; /* Espaçamento interno dentro do bloco */
+    border: 1px solid #ccc; /* Bordas para destacar os blocos */
+    display: flex; /*Para que os blocos fiquem lado a lado */
+    /*box-sizing: border-box;  Inclui as bordas e o padding na largura e altura total do bloco */
+    color: #fff;
+    align-items: center;
+}
+
+/*.cta-btn {
+  display: inline-block;
+  position: relative;
+  padding: 0.8rem $default-font-size;
+  font-weight: bold;
+  line-height: 1;
+  z-index: 1;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  }
+}
+
+.cta-btn--resume {
+  color: $white-color;
+  border: 2px solid $white-color;
+
+  &::after {
+    background: $white-color;
+  }
+
+  &:hover {
+    color: $secondary-color;
+    text-decoration: none;
+
+    &::after {
+      width: 100%;
+    }
+  }
+} */
+
+.btn {
+    background: none;
+    border: 2px solid #fff;
+    padding: 12px 20px;
+    color: #fff;
+    font-family: sans-serif;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: #000 ;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.btn1::before {
+    transform: scaleX(0);
+}
+
+.btn1:hover::before {
+    transform: scaleX(1);
+}
